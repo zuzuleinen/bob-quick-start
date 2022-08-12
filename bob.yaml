@@ -1,0 +1,16 @@
+build:
+  build:
+    input: |-
+      main.go
+      go.mod
+      go.sum
+    cmd: go build -o ./build/server main.go
+    target: /build/server
+run:
+  server:
+    type: binary
+    path: ./build/server
+    dependson:
+      - build
+dependencies:
+  - go_1_18
