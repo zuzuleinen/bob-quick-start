@@ -77,7 +77,7 @@ func Hello(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
-Now when we run `bob build` again, we see the project is re-build again because `main.go` has changed:
+Now when we run `bob build` again, we see the project is built again because `main.go` has changed:
 
 ```shell
 Building nix dependencies...
