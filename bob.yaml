@@ -5,12 +5,6 @@ build:
       go.mod
       go.sum
     cmd: go build -o ./build/server main.go
-    target: /build/server
-run:
-  server:
-    type: binary
-    path: ./build/server
-    dependson:
-      - build
+    target: ./build/server
 dependencies:
   - go_1_18
