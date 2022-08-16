@@ -41,8 +41,7 @@ Ran 1 tasks in 330ms
 ```
 
 The first thing you might have noticed is that you didn't have to install Go for this application to work. bob takes
-care
-of installing all your project dependencies by using Nix under the hood. Nix has over 80 000 packages to pick from so
+care of installing all your project dependencies by using [Nix](https://nixos.org/) under the hood. Nix has over **80 000 packages** to pick from so
 you
 no longer need to rely on Docker containers to manage your environment.
 
