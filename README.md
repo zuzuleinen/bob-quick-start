@@ -73,7 +73,7 @@ Let's change the `main.go` file from `"Hello, World!"` to `"Hello, Bob!"`:
 
 ```go
 func Hello(w http.ResponseWriter, r *http.Request) {
-fmt.Fprint(w, "Hello, Bob!")
+  fmt.Fprint(w, "Hello, Bob!")
 }
 ```
 
