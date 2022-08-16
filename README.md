@@ -69,7 +69,7 @@ Ran 1 tasks in 1 ms
   build              	cached  
 ```
 
-Let's change the `main.go` file from "Hello, World!" to "Hello, Bob!":
+Let's change the `main.go` file from `"Hello, World!"` to `"Hello, Bob!"`:
 
 ```go
 func Hello(w http.ResponseWriter, r *http.Request) {
