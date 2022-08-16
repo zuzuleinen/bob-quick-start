@@ -42,11 +42,9 @@ Ran 1 tasks in 330ms
 
 The first thing you might have noticed is that you didn't have to install Go for this application to work. bob takes
 care of installing all your project dependencies by using [Nix](https://nixos.org/) under the hood. Nix has over **80 000 packages** to pick from so
-you
-no longer need to rely on Docker containers to manage your environment.
+you no longer need to rely on Docker containers to manage your environment.
 
-After running `bob build` you'll notice the binary for our server has been built inside `./build` directory. You can now
-run it:
+The second thing to notice is that the binary for our server has been built inside `./build` directory. You can now run it:
 
 ```shell
 ./build/server 
