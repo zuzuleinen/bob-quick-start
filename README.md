@@ -1,6 +1,6 @@
 # bob-quick-start
 
-To quickly get started, clone our sample 'Hello World' project:
+To quickly get started, clone our sample `Hello World` project:
 
 ```shell
 git clone git@github.com:benchkram/bob-quick-start.git
