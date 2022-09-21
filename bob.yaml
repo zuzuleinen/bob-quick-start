@@ -8,3 +8,4 @@ build:
     target: ./build/server
 dependencies:
   - go_1_18
+nixpkgs: channel:nixos-unstable
