@@ -1,8 +1,4 @@
 version: 2.1
-parameters:
-  nix_path: 
-    type: string
-    default: "nixpkgs=channel:nixos-unstable"
 orbs:
   nix: eld/nix@1.0.0
 jobs:
