@@ -1,0 +1,17 @@
+version: 2.1
+orbs:
+  nix: eld/nix@1.0.0
+jobs:
+  build:
+    machine:
+      image: ubuntu-2004:202010-01
+    steps:
+      - checkout
+      - nix/install:
+          nix_path: nixpkgs=channel:nixpkgs-unstable
+      - run: "sudo /bin/sh -c 'wget https://github.com/benchkram/bob/releases/download/0.5.3/bob_0.5.3_linux_amd64 -O /usr/local/bin/bob && chmod +x /usr/local/bin/bob'"
+      - run: bob build
+workflows:
+  build-project:
+    jobs:
+      - build
