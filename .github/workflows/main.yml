@@ -23,4 +23,6 @@ jobs:
         uses: benchkram/bob-install-action@v1
         with:
           version: 0.6.1
+
+      - name: Bob build
         run: bob build
