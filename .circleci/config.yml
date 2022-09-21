@@ -7,6 +7,8 @@ orbs:
   nix: eld/nix@1.0.0
 jobs:
   build:
+    environment:
+      NIX_PATH: nixpkgs=channel:nixpkgs-unstable
     machine:
       image: ubuntu-2004:202010-01
     steps:
